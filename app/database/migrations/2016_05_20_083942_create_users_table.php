@@ -25,6 +25,18 @@ class CreateUsersTable extends Migration {
             $table->integer('status')->nullable();
             $table->integer('notify')->nullable();
             $table->string('remember_token', 256)->nullable();
+            $table->string('type', 256)->nullable();
+            $table->double('amount_available')->nullable();
+            $table->integer('province_id')->nullable();
+            $table->integer('district_id')->nullable();
+            $table->integer('wards_id')->nullable();
+            $table->string('career', 256)->nullable();
+            $table->string('company', 256)->nullable();
+            $table->string('company_phone', 256)->nullable();
+            $table->string('company_address', 256)->nullable();
+            $table->integer('identity_card')->nullable();
+            $table->string('sex', 256)->nullable();
+            $table->string('date_of_birth', 256)->nullable();
             $table->softDeletes();
             $table->timestamps();
         });
