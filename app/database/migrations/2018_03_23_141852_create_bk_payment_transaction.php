@@ -17,13 +17,13 @@ class CreateBkPaymentTransaction extends Migration {
 		Schema::create('bk_payment_transaction', function (Blueprint $table) {
 			$table->increments('id');
 			$table->integer('user_id')->nullable();
-			$table->string('amount',256)->nullable();
+			$table->bigInteger('amount')->nullable();
 			$table->string('payment_type',256)->nullable();
-			$table->datetime('created_time')->nullable();
 			$table->string('bankname',256)->nullable();
 			$table->string('bankcode',256)->nullable();
 			$table->softDeletes();
 			$table->timestamps();
+		});
 		}
 
 	/**

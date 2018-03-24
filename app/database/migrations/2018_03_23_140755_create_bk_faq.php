@@ -17,7 +17,7 @@ class CreateBkFaq extends Migration {
 			$table->increments('id');
 			$table->integer('category_id')->nullable();
 			$table->string('name',256)->nullable();
-			$table->string('description',256)->nullable();
+			$table->longText('description')->nullable();
 			$table->softDeletes();
 			$table->timestamps();
 		});

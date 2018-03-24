@@ -18,7 +18,7 @@ class CreateBkNews extends Migration {
             $table->string('description', 256)->nullable();
             $table->string('short_descripton', 256)->nullable();
             $table->string('image_url', 256)->nullable();
-            $table->integer('user_id', 256)->nullable();
+            $table->integer('user_id')->nullable();
             $table->integer('status')->nullable();
             $table->softDeletes();
             $table->timestamps();

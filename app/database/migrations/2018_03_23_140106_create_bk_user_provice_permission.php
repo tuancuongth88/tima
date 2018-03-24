@@ -16,7 +16,6 @@ class CreateBkUserProvicePermission extends Migration {
 		Schema::create('bk_user_provice_permission', function (Blueprint $table) {
 			$table->increments('id');
 			$table->integer('userid_id')->nullable();
-			$table->date('created_time')->nullable();
 			$table->softDeletes();
 			$table->timestamps();
 		});

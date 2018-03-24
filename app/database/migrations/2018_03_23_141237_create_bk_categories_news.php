@@ -15,7 +15,6 @@ class CreateBkCategoriesNews extends Migration {
 		//	
 		Schema::create('bk_categories_news', function (Blueprint $table) {
 			$table->increments('id');
-			$table->integer('id')->nullable();
 			$table->string('name',256)->nullable();
 			$table->softDeletes();
 			$table->timestamps();
